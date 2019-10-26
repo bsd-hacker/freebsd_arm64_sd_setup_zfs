@@ -57,6 +57,7 @@ echo 'opensolaris_load="YES"' >> ${DESTDIR}/boot/loader.conf
 echo 'zpool_load="YES"' >> ${DESTDIR}/boot/loader.conf
 echo 'zpool_type="zpool"' >> ${DESTDIR}/boot/loader.conf
 echo 'zpool_name="/boot/zfs/zpool.cache"' >> ${DESTDIR}/boot/loader.conf
+echo 'fdt_overlays="sun50i-a64-sid,sun50i-a64-ths,sun50i-a64-timer,sun50i-a64-opp"' >> ${DESTDIR}/boot/loader.conf
 
 echo '# Custom /etc/fstab for FreeBSD embedded images' \
 	> ${DESTDIR}/etc/fstab
